@@ -3,7 +3,7 @@
 	
 		'user'=>'root',
 		'host'=>'localhost',
-		'password'=>'cf.52059',
+		'password'=>'pass',
 		'database'=>'makephp',
 		'port'=>3306
 	);
