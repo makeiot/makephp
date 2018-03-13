@@ -1,0 +1,45 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,,dl,dd,form,fieldset,legend,input,textarea,select {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #7182a3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+em {
+	font-style: normal;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+menu,p,hr,ul {
+	display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}

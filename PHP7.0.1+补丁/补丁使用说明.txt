@@ -1,0 +1,1 @@
+将该文件替换掉 system/model 下的dbhelper.php即可，即可支持PHP 7.0.1 以上版本的模型操作。

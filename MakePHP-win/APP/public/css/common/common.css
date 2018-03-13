@@ -1,0 +1,87 @@
+/*
+ * 全局字体
+ */
+body{
+	font-family:Segoe UI;
+}
+
+
+/*
+ * 全屏
+ */
+.full{
+	width:100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+/*
+ * 位置
+ */
+.absolute{
+	position: absolute;
+}
+.fixed{
+	position: fixed;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+/*
+ * 清除浮动
+ */
+.clear{
+	zoom:1;
+}
+.clear:after{ 
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/*
+ * 禁用选择
+ */
+.un-select{
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/*
+ * 鼠标样式
+ */
+.point{
+	cursor: pointer;
+}
+
+/*
+ * CSS3过渡
+ */
+.transition-all-1{
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+}
+.transition-all-2{
+	transition: all 2s;
+	-moz-transition: all 2s;
+	-webkit-transition: all 2s;
+	-ms-transition: all 2s;
+}
+.transition-all-4{
+	transition: all 4s;
+	-moz-transition: all 4s;
+	-webkit-transition: all 4s;
+	-ms-transition: all 4s;
+}
+
+

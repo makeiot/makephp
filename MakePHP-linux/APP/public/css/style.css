@@ -1,0 +1,691 @@
+*{
+	margin:0;
+	padding: 0;
+	border:0;
+}
+html,body
+{
+	margin:0;
+	height: 100%;
+}
+div
+{
+	display: block;
+}
+nav
+{
+	/*background-color: red;*/
+	width:50%;
+}
+nav ul
+{
+	padding:0;
+	width:100%;
+}
+li{
+
+	width: 100%;
+	/*background-color: yellow;*/
+	list-style-type:none;
+}
+li a
+{
+	cursor: pointer;	
+}
+nav li a
+{
+	text-align: center;
+	display: block;
+	width: 100%;
+	line-height: 2em;
+	color:white;
+	font-size: 3em;
+}
+nav li:hover
+{
+	color:#ba5400;
+}
+nav li a:hover
+{
+	color:#ba5400;
+}
+.discContainer
+{
+	height: auto;
+	width: 100%;
+	overflow: hidden;	
+	margin-top: 5em;
+}
+
+#aboutus img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+#aboutus h1,h2,p{
+	color: #FFFFFF;
+}
+#aboutus h1
+{
+	font-size: 2.5em;
+}
+#aboutus
+{
+	color: #FFFFFF;
+	padding: 0em 10em 10em 10em;
+	background: url(../img/aboutus01.jpg);
+	-moz-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    -o-background-size:100% 100%;
+    background-size:100% 100%;
+}
+#logoContainer
+{
+	/*border:solid 3px black;*/
+}
+.triangle-down {
+	padding: 0;
+	margin: 0;
+	border: none;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 50px solid #f3f4f5;
+    position: relative;
+}
+#menuBtn
+{
+	width:3em;
+	max-height:3em;
+	height:50%;
+	text-align: center;
+	padding: 5px;
+	padding-top: 0;
+	position:absolute;
+	right:5%;
+	top:30%;
+	/*border: solid 2px rgb(206,206,206);*/
+	cursor:pointer;
+}
+#hideBtnbr
+{
+	height: 3px;
+	width: 100%;
+	background: rgb(206,206,206);;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); 	/* Opera */
+}
+#hideBtnlb
+{
+	height: 3px;
+	width: 100%;
+	background: rgb(206,206,206);;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); 	/* IE 9 */
+	-moz-transform:rotate(-45deg); 	/* Firefox */
+	-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-45deg); 	/* Opera */
+}
+#menuBtn
+{
+	display: none;
+}
+#hideMenuBtn
+{
+	position: absolute;
+	top:2em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 48px;
+	width: 48px;
+	right: 5%;
+	/*border: 2px solid #FFFFFF;*/
+}
+.store
+{
+	opacity: 1;
+    background: #cecece;
+    width: 100%;
+    height: 3px;
+    margin:auto;
+    margin-top: 20%;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+#contract
+{
+	/*background: url(../img/wedodisc.png) repeat;*/
+}
+#conDisc
+{
+	width: 100%;
+	height:40%;
+	position: absolute;
+	background-color: #3e4f71;
+}
+#navbar
+{
+	min-height:5em;
+	height:100%;
+	width:100%;
+	background-color: white;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+}
+#videoContainer,#videoMaskLayer,#menuContainer,#wedo{
+	height:100%;
+	width: 100%;
+}
+#menuContainer
+{
+	overflow: hidden;
+	position: fixed;
+	left:0;
+	top:0;
+	height: 0;
+	background-color: #f07f21;
+	z-index: 15;
+}
+#videoContainer
+{
+	position: relative;
+	height:100%;
+	width: 100%;
+	overflow: hidden;
+}
+#loadingImg {
+    animate-duration: 2s;    //动画持续时间
+    animate-delay: 1s;    //动画延迟时间
+    animate-iteration-count: 2;    //动画执行次数
+    
+}
+#videoMaskLayer
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin:0;
+	top:0;
+	left:0;
+	bottom: 0;
+	background-color: rgba(11,106,160,0.7);
+	text-align: center;
+
+}
+
+.captionColor1
+{
+	color:#657884;
+}
+.introtext
+{
+	
+	padding-top:1.5em;
+	color: white;
+	/*border:solid 3px white;*/
+}
+.introtext h1
+{
+		color: #FFFFFF;
+		font-size:5.5rem;
+}
+.introtext h5
+{
+		color: #FFFFFF;
+		font-size:2.0rem;
+		margin-top:2.5rem;
+}
+.member h1
+{
+	margin-top:1em;
+	color: #000;
+}
+#bgMask
+{
+	color: #fff;
+	position: absolute;
+	top:0;
+	height: 50%;
+	width: 100%;
+	background:url(../img/1920x700.jpg);
+}
+#bgMask h1
+{
+	color: #FFF;
+}
+.member-box h2
+{
+	color: #fff;
+}
+.member-box p
+{
+	    color: #FFF;
+	    text-align: left;
+}
+.introtext button
+{
+	margin-top:1.5em;
+}
+#intro2
+{
+	padding-top:0;
+}
+#services img
+{
+	width:70%;
+	height: 70%;
+}
+.nfw-row
+{
+	width: 100%;
+}
+#copyright
+{
+	float: right;
+}
+#footer
+{
+	padding: 40px 0;
+    background-color: #3e4f71;
+    color: #fff;
+}
+#btnContact
+{
+	margin-left:3em;
+}
+#topv{
+	min-width:100%;
+	max-height:100%;
+	position:relative;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height:auto;
+	width: auto;
+	object-fit:cover;
+	-webkit-filter: grayscale(100%);
+}
+#container
+{
+	position: absolute;
+	margin:0;
+	padding:0;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	overflow: auto;
+		
+}
+.AlignCenter
+{
+	/*子元素垂直、平行都居中*/
+	display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.horiCenterFather
+{
+	text-align: center;
+}
+.servicesItemNL
+{
+	clear: both;
+}
+.servicesItem
+{
+	height: auto;
+	width: 33%;
+	/*display: inline-block;*/
+	float: left;
+	padding: 3em 2em 2em 3em;
+	overflow: hidden;
+}
+.servicesItem a
+{
+	color: #3db39e;
+    text-decoration: none;
+}
+.imgContainer
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.servicesItem img
+{
+	max-height: auto;
+	max-width:128px;
+}
+.horiCenterNode
+{
+	margin-left:auto;
+	margin-right: auto;
+}
+.itemContainer
+{
+	margin: auto;
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+}
+.itemContainer h2{
+	font-size: 3em;
+}
+#contract{
+	width: 100% !important;
+	height: 100%;
+}
+#conContainer
+{
+	width: 60%;
+	min-height: 80%;
+	max-height: auto;
+	overflow: hidden;
+	
+	/*background-color: red;*/
+}
+#conContainer h1,p
+{
+	color: #FFFFFF;
+}
+#conContainer h1
+{
+	font-size: 3em;
+}
+#conContainer p
+{
+	font-size: 3em;
+}
+#conContainer textarea
+{
+	color: #000000;
+	font-size: 20px;
+	border-radius:15px;
+	margin-top: 0.5em;
+	height: 100px;
+    width: 100%;
+}
+#conContainer input,button
+{
+	margin-top: 1em;
+}
+#conContainer button
+{
+	float: left;
+}
+#conDesc table
+{
+	font-size: 1.5em;
+	/*background-color: blue;*/
+	color: #FFFFFF;
+}
+.sections
+{
+	position: relative;
+	min-height:100%;
+	width:100%;
+	max-height: auto;
+	overflow: hidden;
+}
+.triangleContainer
+{
+	/*background-color: red;*/
+	width: 200px;
+	height: auto;
+	margin: auto;
+}
+#services
+{
+	padding-top:5em;
+	background-color: #f3f4f5;
+}
+#services p,h2,h1
+{
+	color:#657884;
+}
+#services h2
+{
+	color: #606060;
+}
+#wedo
+{
+	margin-left:0;
+	/*background: url(../img/wedodisc.png) repeat;*/
+}
+#wedo h1
+{
+	font-size: 2.5em;
+}
+#wedo_disc
+{
+	height: 100%;
+	background:url('../img/wedodisc.png')repeat;
+}
+.aboveDiv {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-image:url(../img/1920x1400.jpg);
+	background-position:top center;
+}
+
+.bootDiv {
+	height: 0%;
+	width: 100%;
+	text-align: center;
+}
+
+.divForm {
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 3px;
+}
+
+
+
+#userInf div {
+	margin: 0px;
+	padding: 0px;
+	width: 99%;
+	float: left;
+	border-style: solid none none none;
+	border-color: rgba(215, 215, 215, 0.9);
+	border-width: thin;
+}
+
+.userInfInput {
+	width: 95%;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding:0px;
+	height: 30px;
+	font-size: 18px;
+	border-style: none;
+	border-color: rgba(215, 215, 215, 0.9);
+	border-width: thin;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.okButtom {
+	height: 32px;
+	width: 50px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	background-color: rgba(28, 180, 255, 1.00);
+	border-style: none;
+	outline: none;
+	border-radius: 3px;
+	color: rgba(255, 255, 255, 1.00);
+}
+
+.okButtonDiv {
+	border-style: none!important;
+}
+
+.connectMeDiv {
+	height: 25px;
+	width: 40%;
+	min-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.connectMeDiv div {
+	text-align: left;
+	width: 50%;
+	height: 100%;
+	margin: 0px;
+	float: left;
+	font-size: 18px;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+
+#userInf p {
+	text-align: right;
+	font-size: 14px;
+	padding-right: 20px;
+	color: rgba(18, 0, 255, 1.00);
+	cursor: default;
+}
+
+.connectMeDivHead {
+	width: 100%;
+	height: 20%;
+}
+
+.textareaInf {
+	width: 98%;
+	max-height: 250px;
+	height: 250px;
+	resize: none;
+	outline: none;
+	border-radius: 5px;
+	font-size: 18px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+/*幻灯片样式*/
+.exampleDiv
+			{
+				height:500px;width:1000px;position: absolute;left: 50%;margin-left: -500px;margin-top:7em;border-radius: 10px;
+			}
+			.imgsDiv{
+				max-height: 100%;
+				position: absolute;
+				width:100%;
+				border-radius: 20px;
+				padding: 0px;
+				margin: 0px;
+				overflow: hidden;
+				bottom: 5%;
+			}
+			.imgDiv{
+				
+				max-height:100%;
+				width:100%;
+				overflow:hidden;
+			}
+			.imgDiv img{
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+			.divtext
+			{
+				height:15%;
+				width:100%;
+				background-color: rgba(0,0,0,0.2);
+				position: absolute;
+				bottom: 0;
+
+			}
+			.lineCenterDiv
+			{
+				width:100%;
+				position:relative;
+			}
+			.ptext{
+				color:white;
+				font-size:10;
+				text-align: center;
+				vertical-align: text-bottom;
+				
+				
+			}
+			.leftBotton{
+				height:100%;
+				width:10%;
+				float:left;
+				font-size: 2em;
+				text-align:right ;
+				opacity:0.5;
+			}
+			.rightBotton{
+				height:100%;
+				width:10%;
+				float:right;
+				font-size:2em;
+				text-align:left ;
+				opacity:0.5;
+			}
+			.divo
+			{
+				height:5%;
+				width:100%;
+				/*background: red;*/
+				z-index: 10;
+				bottom: 0;
+				margin: auto;
+				position:absolute;
+			}
+			.divoo
+			{
+				width:2%;
+				height:20%;
+				background:#9dd8c5;
+				-moz-border-radius: 10%;
+				-webkit-border-radius: 10%;
+				border-radius:10%;
+				float:left;
+				margin:0.5em;
+			}
+			.centerButton
+			{
+				top:40%;
+				width:100%;
+				position: absolute;
+				z-index: 5;
+			}
+			.a-button
+			{
+				text-decoration:none;
+				color:#006790;
+
+			}
+			#ourteam{
+				padding-bottom: 4em;
+				background: url(../img/1920x700.jpg) repeat;
+			}
+@font-face {font-family: 'webfont';
+		  src: url('//at.alicdn.com/t/78oals1hcse2ke29.eot'); /* IE9*/
+		  src: url('//at.alicdn.com/t/78oals1hcse2ke29.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('//at.alicdn.com/t/78oals1hcse2ke29.woff') format('woff'), /* chrome、firefox */
+		  url('//at.alicdn.com/t/78oals1hcse2ke29.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		  url('//at.alicdn.com/t/78oals1hcse2ke29.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
+	}

@@ -1,0 +1,11 @@
+RewriteEngine on
+#rewriteengine为重写引擎开关on为开启off为关闭
+#RewriteCond $1 !^(index.php.php|images|robots.txt)
+#RewriteRule ([a-zA-Z]{1,})/([0-9]{1,}).html$ system/router/router.php?controller=$1&action=$2
+#RewriteRule ([a-zA-Z]{1,})/([a-zA-Z0-9]{1,}).php$ system/router/router.php?controller=$1&action=$2
+#RewriteRule ([a-zA-Z]{1,})/([a-zA-Z0-9]{1,})$ system/router/router.php?controller=$1&action=$2
+#RewriteRule ([a-zA-Z]{1,})/([a-zA-Z0-9]{1,})/$ system/router/router.php?controller=$1&action=$2
+#([a-zA-Z]{1,})-([a-zA-Z]{1,}).html$是规则，sharexie/test.php?action=$1&id=$2是要替换的格式，$1代表第一个括号匹配的值，$2代表第二个。
+
+###########################routerPlus########################3
+RewriteRule ^([a-zA-Z0-9/\s\S]*)$ system/router/routerPlus.php/$1
